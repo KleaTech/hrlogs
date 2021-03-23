@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blockly - Loading with Webpack</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+			width: 100%;
+            margin: 0;
+        }
+
+        #blocklyDiv {
+            height: 70%;
+        }
+		
+		#blocklyButton {
+			height: 5%;
+		}
+		
+		#resultField {
+			margin: 10px;
+			height: 20%;
+			width: 95%;
+		}
+    </style>
+</head>
+
+<body>
+    <div id='blocklyDiv'></div>
+	<button id="blocklyButton">Convert</button><br>
+	<input id="resultField">
+
+    <script type='text/javascript' src='./main.js'></script>
+
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="Matchers">
+    <block type="regex_match_string">
+      <field name="str">abc</field>
+    </block>
+    <block type="regex_match_digit"></block>
+    <block type="regex_match_anycharacter"></block>
+  </category>
+  <category name="Quantifiers">
+    <block type="regex_quantifier_any"></block>
+  </category>
+  <category name="Initializers">
+  </category>
+  <category name="Control structures">
+    <block type="regex_or"></block>
+  </category>
+</xml>
+</body>
+
+</html>
